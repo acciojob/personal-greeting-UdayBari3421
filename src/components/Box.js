@@ -4,7 +4,7 @@ const Box = () => {
   let [a, setA] = useState("");
 
   function funct(e) {
-    setA("Hello " + e.target.value + "!");
+    e.target.value != "" ? setA("Hello " + e.target.value + "!") : setA("");
   }
 
   return (
@@ -14,7 +14,6 @@ const Box = () => {
         <input onChange={funct} />
       </form>
       <p>{a}</p>
-      <p></p>
     </div>
   );
 };
