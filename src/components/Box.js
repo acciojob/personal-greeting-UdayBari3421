@@ -4,7 +4,7 @@ const Box = () => {
   let [a, setA] = useState("");
 
   function funct(e) {
-    setA(e.target.value);
+    setA("Hello " + e.target.value + "!");
   }
 
   return (
@@ -13,7 +13,8 @@ const Box = () => {
         <label for="inp">Enter your name:</label>
         <input onChange={funct} />
       </form>
-      <p>{"Hello" + { a } + "!"}</p>
+      <p>{a}</p>
+      <p></p>
     </div>
   );
 };
