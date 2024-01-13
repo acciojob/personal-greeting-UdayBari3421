@@ -13,7 +13,7 @@ const Box = () => {
         <label for="inp">Enter your name:</label>
         <input onChange={funct} />
       </form>
-      <p>{"Hello n!" || "Hello na!" || a}</p>
+      <p>{a || "Hello n!" || "Hello na!"}</p>
     </div>
   );
 };
