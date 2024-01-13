@@ -11,7 +11,7 @@ const Box = () => {
     <div>
       <form>
         <label for="inp">Enter your name:</label>
-        <input onChange={funct} name="inp" id="inp" />
+        <input onChange={funct} />
       </form>
       <p>{a}</p>
     </div>
